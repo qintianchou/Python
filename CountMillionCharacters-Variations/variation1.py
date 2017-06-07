@@ -1,13 +1,13 @@
 def countChars(filename):
-	count = {}
+    count = {}
 
-	with open(filename) as info: #inputFile Replaced with filename
-		readFile = info.read()
-		for character in readFile.upper():
-			count[character] = count.get(character, 0) + 1
+    with open(filename) as info:  # inputFile Replaced with filename
+        readFile = info.read()
+        for character in readFile.upper():
+            count[character] = count.get(character, 0) + 1
 
-	return count
+    return count
 
-if __name__ == '__main__'
-	inputFile = input("File Name : ")
-	print(countChars(inputFile))
+if __name__ == '__main__':
+    inputFile = input("File Name : ")
+    print(countChars(inputFile))
